@@ -13,7 +13,13 @@
 // I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(amount: u8) -> u16 {
+    if amount > 40 {
+        amount.into()
+    } else {
+        (amount * 2).into()
+    }
+}
 
 // Don't modify this function!
 #[test]
